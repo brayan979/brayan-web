@@ -5,14 +5,19 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
+    <div class="text-3xl w-full font-bold">Perfil</div>
   </div>
 
   <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <p>Tras haber tenido mi primera experiencia laboral en el sector tecnológico sentí que era muy pronto para especializarme y que me faltaba mucho por conocer antes de dedicarme a un sector en concreto.
+    </p>
+    <p>
+      Para alguien tan curioso como yo, la universidad me ayudó a descubrir nuevos sectores tecnológicos como Aprendizaje Autónomo, IoT y Big Data que me apasionan.
+    </p>
+    <p>
+      Actualmente tengo claro que quiero dedicarme a uno de estos sectores que junto con mi compromiso, el aprendizaje continuo y mi mentalidad proactiva me impulsan a buscar oportunidades que me permitan crecer y hacer una diferencia significativa en dichos sectores.
+    </p>
+
   </div>
 
   <div class="mb-5">
@@ -39,13 +44,22 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
       title="VT-LAB"
       subtitle="2021-03 a 2021-09, Madrid, España"
     >
-      CV
+      <ul>
+        <li>- Colaboración con equipos multifuncionales para identificar y priorizar características y requisitos.
+        </li>
+        <li>- Maquetación de Webs con HTML y CSS. Implementación de Frameworks como Bootstrap.
+        </li>
+        <li>- Creación de funciones en una API REST.
+        </li>
+        <li>- Refactorización código de JQuery a ES6.</li>
+      </ul>
+      <br>
     </TimeLineElement>
     <TimeLineElement
       title="Freelance"
       subtitle="2022 a 2023"
     >
-      En este trabajo realizé varias webs para un cliente. Entre las más complejas eran una página de películas online y una página de administración. En todas ellas tuve que realizar API o gestinar las conexiones con las base de datos.
+      En este trabajo realizé varias webs para un cliente y además le enseñe a programar en JavaScript. Entre las más complejas eran una página de películas online y una página de administración. En todas ellas tuve que realizar API o gestinar las conexiones con las base de datos.
     </TimeLineElement>
 
   </div>
@@ -64,16 +78,27 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </ul>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Habilidades</div>
+    <div class="text-3xl w-full font-bold">Aptitudes</div>
   </div>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Python</li>
-    <li>JavaScript</li>
-    <li>JAVA</li>
-    <li>SQL</li>
-  
+  <ul class="list-disc columns-1 mx-6">
+    <li>Autodidácta</li>
+    <li>Proactivo</li>
+    <li>Pensamiento Transversal</li>
+    <li>Resilecia</li>
+    <li>Empatía</li>
+  </ul>
+  <br>
 
 
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Habilidades Informáticas</div>
+  </div>
+  <ul class="list-disc columns-1 mx-6">
+    <li>Python: 3 años de experiencia.</li>
+    <li>JavaScript: 4 años de experiencia.</li>
+    <li>JAVA: 2 años de experiencia.</li>
+    <li>SQL: 4 años de experiencia.</li>
+    <li>Docker y Kuberntes: 1 año de experiencia.</li>
   </ul>
 </BaseLayout>
