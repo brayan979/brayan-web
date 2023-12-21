@@ -10,17 +10,17 @@ const last_posts = posts.slice(0, 3);
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
+    <div class="text-xl py-1">Hola Buenas 👋</div>
     <div class="text-5xl font-bold">Soy Brayan Guarachi Apaza</div>
     <div class="text-3xl py-3 font-bold">Ingeniero de Datos y Sistemas.</div>
     <div class="py-2">
       <text class="text-lg">
-        En este es mi sitio web quiero dar a conocer mis proyectos y mi experiencia laboral como ingeniero.
+        En este es mi sitio web quiero dar a conocer mis proyectos y mi experiencia laboral como ingeniero. Porque soy muy apasionado de la tecnología.
       </text>
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
+      <a class="btn" href="https://twitter.com/" target="_blank"> Let's connect!</a>
+      <a href="https://teal-mousse-7631eb.netlify.app/" target="_blank" class="btn btn-outline ml-5">
         Get This template
       </a>
     </div>
@@ -34,7 +34,7 @@ const last_posts = posts.slice(0, 3);
     title="Sistema Web para la gestión de niño con TDL"
     img="/post_img.webp"
     desc="En este proyecto lo que se prentende es conseguir desarrollar "
-    url="#"
+    url="https://brayan979.github.io/gades-web/"
     badge="NEW"
   />
   <div class="divider my-0"></div>
@@ -53,23 +53,5 @@ const last_posts = posts.slice(0, 3);
     badge="FOSS"
   />
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
 
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + post.slug}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
 </BaseLayout>
